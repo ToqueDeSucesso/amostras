@@ -3,8 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>[SERVIÇO_PRINCIPAL] em [CIDADE] | [NOME_DA_EMPRESA]</title>
-  <meta name="description" content="[NOME_DA_EMPRESA] em [BAIRRO], [CIDADE]. Experiência diferenciada e atendimento rápido via WhatsApp!" />
+  <!-- Bloqueio de indexação ativo por padrão na fase de prospecção (remover na entrega final no domínio oficial) -->
+  <meta name="robots" content="noindex, nofollow" />
+  <title>[NOME_DA_EMPRESA] | [ESPECIALIDADE] em [CIDADE - UF]</title>
+  <meta name="description" content="[NOME_DA_EMPRESA] — o melhor em [ESPECIALIDADE] em [BAIRRO], [CIDADE - UF]. Experiência diferenciada e contato direto pelo WhatsApp. Chame agora!" />
+
+  <!-- Dados Estruturados SEO Local (Schema.org JSON-LD) integrado ao Google Meu Negócio e Redes Sociais -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "[NOME_DA_EMPRESA]",
+    "description": "[ESPECIALIDADE] em [CIDADE - UF]. Atendimento direto pelo WhatsApp.",
+    "telephone": "+55[DDD][NUMERO_WHATSAPP]",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[RUA_E_NUMERO]",
+      "addressLocality": "[CIDADE]",
+      "addressRegion": "[UF]",
+      "addressCountry": "BR"
+    },
+    "sameAs": [
+      "[LINK_GOOGLE_MEU_NEGOCIO]",
+      "[LINK_INSTAGRAM]",
+      "[LINK_FACEBOOK]"
+    ]
+  }
+  </script>
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +39,13 @@
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased">
   <!-- MODELO 3 (TEMPLATE BASE): MODERNO, VISUAL & ALTO IMPACTO (100% WHATSAPP - ZERO FORMULÁRIOS) -->
+  <!-- REGRA DE SEO: Exatamente UM único <h1> por página (no topo/Hero) contendo Nome da Empresa + Serviço Principal + Cidade -->
   <main class="min-h-screen flex items-center justify-center p-6 text-center">
-    <div class="max-w-lg space-y-3">
-      <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Toque de Sucesso • Template Base</span>
-      <h1 class="text-2xl font-bold">[NOME_DA_EMPRESA] — Modelo 3 (Moderno & Alto Impacto)</h1>
-      <p class="text-sm text-slate-400">Este arquivo será preenchido automaticamente pelo Antigravity com os 7 blocos obrigatórios de conversão e SEO Local.</p>
-    </div>
+    <section id="hero" class="max-w-lg space-y-3">
+      <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Toque de Sucesso • Modelo 3 (Moderno & Alto Impacto)</span>
+      <h1 class="text-2xl sm:text-3xl font-bold">[NOME_DA_EMPRESA] — [ESPECIALIDADE] em [CIDADE - UF]</h1>
+      <p class="text-sm text-slate-400">Este arquivo será preenchido automaticamente pelo Antigravity com os 7 blocos obrigatórios de conversão, H1 único e SEO Local integrado ao Google Meu Negócio.</p>
+    </section>
   </main>
   <script>lucide.createIcons();</script>
 </body>
