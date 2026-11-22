@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pacotinho dos Sonhos — Confeitaria & Cafeteria | Bairro Santana, Porto Alegre</title>
+  <meta name="description" content="Confeitaria artesanal e cafeteria na Rua Santana, 1246 em Porto Alegre/RS. Avaliada com nota 4.9 por 142 clientes no Google." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            sans: ['DM Sans', 'sans-serif'],
+          },
+          colors: {
+            patisserie: {
+              linen: '#FAF6F0',
+              ivory: '#FFFDFB',
+              cocoa: '#3E2723',
+              mocha: '#5D4037',
+              gold: '#B47B2B',
+              blush: '#F9E8EC',
+              berry: '#9D174D'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-patisserie-linen text-patisserie-cocoa font-sans antialiased selection:bg-patisserie-gold selection:text-white">
+
+  <!-- 1. CABEÇALHO FIXO (NAVBAR EDITORIAL) -->
+  <header class="sticky top-0 z-40 bg-patisserie-ivory/90 backdrop-blur-md border-b border-stone-200/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
+      <div class="hidden lg:flex items-center gap-8 text-xs uppercase tracking-[0.18em] font-semibold text-patisserie-mocha">
+        <a href="#essencia" class="hover:text-patisserie-gold transition-colors">Nossa Essência</a>
+        <a href="#menu-editorial" class="hover:text-patisserie-gold transition-colors">Cardápio & Encomendas</a>
+      </div>
+
+      <a href="#" class="text-center group">
+        <span class="font-display font-bold text-2xl sm:text-3xl tracking-tight text-patisserie-cocoa block">
+          Pacotinho <span class="italic font-normal text-patisserie-gold">dos</span> Sonhos
+        </span>
+        <span class="text-[10px] uppercase tracking-[0.25em] text-patisserie-mocha font-semibold block mt-0.5">
+          Confeitaria & Cafeteria • Porto Alegre
+        </span>
+      </a>
+
+      <div class="flex items-center gap-5">
+        <a href="#visite" class="hidden lg:inline text-xs uppercase tracking-[0.18em] font-semibold text-patisserie-mocha hover:text-patisserie-gold transition-colors">
+          Bairro Santana
+        </a>
+        <a href="https://wa.me/5551995188229?text=Ol%C3%A1%2C%20equipe%20da%20Pacotinho%20dos%20Sonhos!%20Gostaria%20de%20atendimento%20pelo%20WhatsApp."
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-patisserie-cocoa hover:bg-patisserie-mocha text-patisserie-ivory text-xs uppercase tracking-widest font-semibold px-5 py-3 rounded-full transition-all shadow-sm">
+          <i data-lucide="message-circle" class="w-4 h-4 text-amber-300"></i>
+          <span>Atendimento WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION (ESTILO EDITORIAL / BOUTIQUE) -->
+  <section class="py-12 sm:py-20 lg:py-24 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Coluna Texto Editorial -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-3 bg-patisserie-ivory border border-stone-200 px-4 py-2 rounded-full shadow-sm">
+            <span class="text-patisserie-gold font-display font-bold text-base">★ 4.9</span>
+            <span class="h-3 w-px bg-stone-300"></span>
+            <span class="text-xs uppercase tracking-wider font-semibold text-patisserie-mocha">
+              142 Avaliações Verificadas no Google
+            </span>
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-6xl text-patisserie-cocoa leading-[1.12]">
+            A arte de adoçar os seus melhores <span class="italic font-normal text-patisserie-berry">momentos</span> em Santana.
+          </h1>
+
+          <p class="text-base sm:text-lg text-patisserie-mocha/90 leading-relaxed">
+            Na <strong>Rua Santana, 1246</strong>, unimos a tradição da confeitaria artesanal ao aconchego de uma cafeteria pensada para acolher você em Porto Alegre.
+          </p>
+
+          <div class="pt-2 flex flex-col sm:flex-row gap-4">
+            <a href="https://wa.me/5551995188229?text=Ol%C3%A1%2C%20equipe%20da%20Pacotinho%20dos%20Sonhos!%20Vi%20o%20site%20e%20gostaria%20de%20consultar%20a%20vitrine%20de%20hoje%20ou%20fazer%20uma%20encomenda."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-center gap-3 bg-patisserie-cocoa hover:bg-patisserie-mocha text-white font-semibold text-sm uppercase tracking-wider px-8 py-4 rounded-full shadow-lg transition-all">
+              <i data-lucide="message-circle" class="w-4 h-4 text-amber-300"></i>
+              <span>Encomendar ou Consultar Vitrine</span>
+            </a>
+            <a href="#menu-editorial"
+               class="inline-flex items-center justify-center gap-2 bg-transparent hover:bg-patisserie-ivory text-patisserie-cocoa border border-patisserie-cocoa/30 font-semibold text-sm uppercase tracking-wider px-7 py-4 rounded-full transition-all">
+              <span>Explorar Especialidades</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna Composição de Fotos Estilo Revista (Café Especial Latte Art & Confeitaria Artesanal) -->
+        <div class="lg:col-span-6 relative">
+          <div class="grid grid-cols-12 gap-4 items-end">
+            <div class="col-span-7">
+              <div class="rounded-t-full rounded-b-3xl overflow-hidden shadow-xl border-8 border-patisserie-ivory aspect-[3/4]">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=85"
+                     alt="Café especial com latte art e confeitaria artesanal na Pacotinho dos Sonhos"
+                     class="w-full h-full object-cover" />
+              </div>
+            </div>
+            <div class="col-span-5 space-y-4">
+              <div class="bg-patisserie-blush p-5 rounded-3xl border border-rose-200/60">
+                <p class="font-display italic text-lg text-patisserie-berry leading-snug">
+                  “Cada doce e cada xícara carregam o carinho de uma receita feita para encantar.”
+                </p>
+                <p class="text-[11px] uppercase tracking-widest text-patisserie-mocha mt-3 font-semibold">
+                  R. Santana, 1246 • POA
+                </p>
+              </div>
+              <div class="rounded-3xl overflow-hidden shadow-lg border-4 border-patisserie-ivory aspect-square">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=85"
+                     alt="Torta e confeitaria artesanal servida na Pacotinho dos Sonhos"
+                     class="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SOBRE / NOSSA ESSÊNCIA (STORYTELLING EDITORIAL) -->
+  <section id="essencia" class="py-16 sm:py-24 bg-patisserie-ivory border-y border-stone-200/80">
+    <div class="max-w-5xl mx-auto px-4 sm:px-8 text-center space-y-6">
+      <span class="text-xs uppercase tracking-[0.25em] text-patisserie-gold font-bold">Nossa História & Propósito</span>
+      <h2 class="font-display text-3xl sm:text-5xl text-patisserie-cocoa leading-tight">
+        Um refúgio de sabor e afeto no coração do Bairro Santana
+      </h2>
+      <p class="text-base sm:text-lg text-patisserie-mocha/90 leading-relaxed max-w-3xl mx-auto">
+        A <strong>Pacotinho dos Sonhos - Confeitaria e Cafeteria</strong> conquistou os moradores de Porto Alegre pelo equilíbrio entre receitas afetivas, ingredientes frescos e atendimento acolhedor. Seja para uma pausa tranquila acompanhada de um bom café na <strong>Rua Santana, 1246</strong>, seja para levar doces e tortas para celebrar em casa, cuidamos de cada detalhe.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 text-left">
+        <div class="p-6 rounded-2xl bg-patisserie-linen border border-stone-200/70">
+          <span class="font-display text-3xl text-patisserie-gold block mb-2">01.</span>
+          <h3 class="font-display font-bold text-xl text-patisserie-cocoa">Confeitaria Afetiva</h3>
+          <p class="text-sm text-patisserie-mocha/85 mt-2 leading-relaxed">
+            Sonhos recheados, bolos, tortas e doces elaborados com textura e sabor inconfundíveis.
+          </p>
+        </div>
+        <div class="p-6 rounded-2xl bg-patisserie-linen border border-stone-200/70">
+          <span class="font-display text-3xl text-patisserie-gold block mb-2">02.</span>
+          <h3 class="font-display font-bold text-xl text-patisserie-cocoa">Cafeteria Acolhedora</h3>
+          <p class="text-sm text-patisserie-mocha/85 mt-2 leading-relaxed">
+            Cafés selecionados e opções salgadas fresquinhas para o seu café da manhã ou lanche da tarde.
+          </p>
+        </div>
+        <div class="p-6 rounded-2xl bg-patisserie-linen border border-stone-200/70">
+          <span class="font-display text-3xl text-patisserie-gold block mb-2">03.</span>
+          <h3 class="font-display font-bold text-xl text-patisserie-cocoa">Reputação 4.9 Estrelas</h3>
+          <p class="text-sm text-patisserie-mocha/85 mt-2 leading-relaxed">
+            Reconhecida espontaneamente por 142 clientes no Google pela qualidade e simpatia no atendimento.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SERVIÇOS / PRODUTOS + BLOCO DINÂMICO (MENU EDITORIAL DE CONFEITARIA & CAFETERIA) -->
+  <section id="menu-editorial" class="py-16 sm:py-24 bg-patisserie-linen">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-patisserie-berry font-bold">Curadoria da Casa</span>
+          <h2 class="font-display text-3xl sm:text-5xl text-patisserie-cocoa mt-2">
+            Vitrine & Menu de Encomendas
+          </h2>
+        </div>
+        <p class="text-sm text-patisserie-mocha max-w-md">
+          Como trabalhamos com produção fresca, consulte pelo WhatsApp os sabores disponíveis hoje na vitrine ou solicite sua encomenda personalizada.
+        </p>
+      </div>
+
+      <!-- Menu Estilo Editorial em 2 Colunas -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Categoria 1 -->
+        <div class="bg-patisserie-ivory p-7 sm:p-9 rounded-3xl border border-stone-200 shadow-sm flex flex-col justify-between space-y-6">
+          <div class="flex gap-5 items-start">
+            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=400&q=80"
+                 alt="Sonhos e Doces"
+                 class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl object-cover shrink-0 border border-stone-200" />
+            <div>
+              <span class="text-[11px] uppercase tracking-widest text-patisserie-berry font-bold">Especialidade que dá nome à casa</span>
+              <h3 class="font-display font-bold text-2xl text-patisserie-cocoa mt-1">Sonhos & Doces Finos</h3>
+              <p class="text-sm text-patisserie-mocha/85 mt-2 leading-relaxed">
+                Sonhos macios e generosamente recheados, brigadeiros, doces tradicionais e criações artesanais fresquinhas.
+              </p>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-stone-200/70 flex items-center justify-between">
+            <span class="text-xs uppercase tracking-wider text-patisserie-mocha font-semibold">Disponível na vitrine & encomenda</span>
+            <a href="https://wa.me/5551995188229?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20os%20Sonhos%20e%20Doces%20dispon%C3%ADveis%20hoje%20na%20Pacotinho%20dos%20Sonhos."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-patisserie-berry hover:text-patisserie-cocoa transition-colors">
+              <span>Pedir pelo WhatsApp</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Categoria 2 -->
+        <div class="bg-patisserie-ivory p-7 sm:p-9 rounded-3xl border border-stone-200 shadow-sm flex flex-col justify-between space-y-6">
+          <div class="flex gap-5 items-start">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=400&q=80"
+                 alt="Tortas e Bolos"
+                 class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl object-cover shrink-0 border border-stone-200" />
+            <div>
+              <span class="text-[11px] uppercase tracking-widest text-patisserie-gold font-bold">Celebrações & Fatias</span>
+              <h3 class="font-display font-bold text-2xl text-patisserie-cocoa mt-1">Tortas & Bolos Artesanais</h3>
+              <p class="text-sm text-patisserie-mocha/85 mt-2 leading-relaxed">
+                Tortas confeitadas e bolos especiais em fatias para consumo imediato ou inteiros sob encomenda para o seu evento.
+              </p>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-stone-200/70 flex items-center justify-between">
+            <span class="text-xs uppercase tracking-wider text-patisserie-mocha font-semibold">Consulte sabores e tamanhos</span>
+            <a href="https://wa.me/5551995188229?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20as%20op%C3%A7%C3%B5es%20de%20Tortas%20e%20Bolos%20da%20Pacotinho%20dos%20Sonhos."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-patisserie-berry hover:text-patisserie-cocoa transition-colors">
+              <span>Solicitar no WhatsApp</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Categoria 3 -->
+        <div class="bg-patisserie-ivory p-7 sm:p-9 rounded-3xl border border-stone-200 shadow-sm flex flex-col justify-between space-y-6">
+          <div class="flex gap-5 items-start">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80"
+                 alt="Cafeteria e Bebidas com Latte Art"
+                 class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl object-cover shrink-0 border border-stone-200" />
+            <div>
+              <span class="text-[11px] uppercase tracking-widest text-patisserie-gold font-bold">Pausa Perfeita</span>
+              <h3 class="font-display font-bold text-2xl text-patisserie-cocoa mt-1">Cafeteria & Bebidas</h3>
+              <p class="text-sm text-patisserie-mocha/85 mt-2 leading-relaxed">
+                Cafés passados e expressos na temperatura ideal, bebidas quentes e geladas para harmonizar com nossa confeitaria.
+              </p>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-stone-200/70 flex items-center justify-between">
+            <span class="text-xs uppercase tracking-wider text-patisserie-mocha font-semibold">Consumo no local ou viagem</span>
+            <a href="https://wa.me/5551995188229?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20card%C3%A1pio%20da%20Cafeteria%20na%20Pacotinho%20dos%20Sonhos."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-patisserie-berry hover:text-patisserie-cocoa transition-colors">
+              <span>Falar com a Cafeteria</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Categoria 4 -->
+        <div class="bg-patisserie-ivory p-7 sm:p-9 rounded-3xl border border-stone-200 shadow-sm flex flex-col justify-between space-y-6">
+          <div class="flex gap-5 items-start">
+            <img src="https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=400&q=80"
+                 alt="Salgados e Kits Festa"
+                 class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl object-cover shrink-0 border border-stone-200" />
+            <div>
+              <span class="text-[11px] uppercase tracking-widest text-patisserie-berry font-bold">Salgados & Eventos</span>
+              <h3 class="font-display font-bold text-2xl text-patisserie-cocoa mt-1">Salgados & Encomendas Especiais</h3>
+              <p class="text-sm text-patisserie-mocha/85 mt-2 leading-relaxed">
+                Salgados frescos para o seu lanche diário e opções sob medida para aniversários, reuniões e confraternizações.
+              </p>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-stone-200/70 flex items-center justify-between">
+            <span class="text-xs uppercase tracking-wider text-patisserie-mocha font-semibold">Orçamento personalizado</span>
+            <a href="https://wa.me/5551995188229?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20os%20Salgados%20e%20op%C3%A7%C3%B5es%20de%20encomenda%20da%20Pacotinho%20dos%20Sonhos."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-patisserie-berry hover:text-patisserie-cocoa transition-colors">
+              <span>Fazer Orçamento</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PROVA SOCIAL E CREDIBILIDADE -->
+  <section class="py-16 sm:py-24 bg-patisserie-cocoa text-patisserie-ivory">
+    <div class="max-w-5xl mx-auto px-4 sm:px-8 text-center space-y-8">
+      <div class="inline-flex items-center gap-1.5 text-amber-300">
+        <i data-lucide="star" class="w-5 h-5 fill-amber-300"></i>
+        <i data-lucide="star" class="w-5 h-5 fill-amber-300"></i>
+        <i data-lucide="star" class="w-5 h-5 fill-amber-300"></i>
+        <i data-lucide="star" class="w-5 h-5 fill-amber-300"></i>
+        <i data-lucide="star" class="w-5 h-5 fill-amber-300"></i>
+      </div>
+      <h2 class="font-display text-3xl sm:text-5xl leading-tight">
+        Nota <span class="italic text-amber-300">4.9 de 5.0</span> com 142 avaliações reais no Google
+      </h2>
+      <p class="text-stone-300 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
+        A confiança de quem visita a nossa loja na Rua Santana e recomenda os nossos doces, sonhos e cafés para amigos e familiares em Porto Alegre.
+      </p>
+      <div class="pt-2 flex flex-wrap justify-center gap-4">
+        <a href="https://share.google/wL5vMi3FPuWS8EIBC" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-300 text-patisserie-cocoa font-bold text-xs uppercase tracking-widest px-7 py-4 rounded-full transition-all">
+          <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span>Ver Avaliações no Google</span>
+        </a>
+        <a href="https://www.instagram.com/pacotinho_dos_sonhos/" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-widest px-7 py-4 rounded-full transition-all">
+          <svg class="w-4 h-4 text-rose-300 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          <span>Acompanhar no Instagram</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. LOCALIZAÇÃO E CONTATO -->
+  <section id="visite" class="py-16 sm:py-24 bg-patisserie-ivory">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-5 space-y-6">
+        <span class="text-xs uppercase tracking-[0.25em] text-patisserie-gold font-bold">Visite Nossa Loja</span>
+        <h2 class="font-display text-3xl sm:text-4xl text-patisserie-cocoa">
+          Esperamos por você no Bairro Santana
+        </h2>
+        <div class="space-y-4 text-sm text-patisserie-mocha">
+          <div class="p-4 rounded-2xl bg-patisserie-linen border border-stone-200/80">
+            <strong class="block text-patisserie-cocoa uppercase text-xs tracking-wider mb-1">Endereço</strong>
+            R. Santana, 1246 — Santana, Porto Alegre - RS
+          </div>
+          <div class="p-4 rounded-2xl bg-patisserie-linen border border-stone-200/80">
+            <strong class="block text-patisserie-cocoa uppercase text-xs tracking-wider mb-1">WhatsApp Direto</strong>
+            (51) 99518-8229
+          </div>
+          <div class="p-4 rounded-2xl bg-patisserie-linen border border-stone-200/80">
+            <strong class="block text-patisserie-cocoa uppercase text-xs tracking-wider mb-1">Atendimento & Encomendas</strong>
+            Consulte o horário atualizado e os produtos disponíveis hoje pelo nosso WhatsApp.
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3 pt-2">
+          <a href="https://www.google.com/maps/search/?api=1&query=R.+Santana,+1246,+Santana,+Porto+Alegre+-+RS"
+             target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center justify-center gap-2 bg-patisserie-cocoa hover:bg-patisserie-mocha text-white text-xs uppercase tracking-widest font-bold px-6 py-4 rounded-full transition-all">
+            <i data-lucide="map-pin" class="w-4 h-4 text-amber-300"></i>
+            <span>Como Chegar</span>
+          </a>
+          <a href="https://wa.me/5551995188229?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20equipe%20da%20Pacotinho%20dos%20Sonhos."
+             target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center justify-center gap-2 bg-green-700 hover:bg-green-800 text-white text-xs uppercase tracking-widest font-bold px-6 py-4 rounded-full transition-all">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Chamar no WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7">
+        <div class="rounded-3xl overflow-hidden shadow-lg border-4 border-patisserie-linen h-80 sm:h-96">
+          <iframe
+            title="Localização Pacotinho dos Sonhos - R. Santana, 1246"
+            src="https://www.google.com/maps?q=R.+Santana,+1246,+Santana,+Porto+Alegre+-+RS&output=embed"
+            class="w-full h-full border-0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. RODAPÉ + BOTÃO FLUTUANTE -->
+  <footer class="bg-patisserie-linen border-t border-stone-200 py-12 text-patisserie-mocha">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="text-center md:text-left">
+        <p class="font-display font-bold text-xl text-patisserie-cocoa">Pacotinho dos Sonhos — Confeitaria e Cafeteria</p>
+        <p class="text-xs mt-1">R. Santana, 1246, Santana, Porto Alegre - RS • WhatsApp (51) 99518-8229</p>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <a href="https://www.instagram.com/pacotinho_dos_sonhos/" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white border border-stone-200 hover:border-patisserie-gold text-patisserie-cocoa text-xs font-semibold transition-colors">
+          <svg class="w-4 h-4 text-patisserie-berry shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          <span>Instagram</span>
+        </a>
+        <a href="https://www.facebook.com/p/Pacotinho-dos-sonhos-100063519734943/" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white border border-stone-200 hover:border-patisserie-gold text-patisserie-cocoa text-xs font-semibold transition-colors">
+          <svg class="w-4 h-4 text-blue-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          <span>Facebook</span>
+        </a>
+        <a href="https://share.google/wL5vMi3FPuWS8EIBC" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white border border-stone-200 hover:border-patisserie-gold text-patisserie-cocoa text-xs font-semibold transition-colors">
+          <svg class="w-4 h-4 text-patisserie-gold shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span>Google (4.9★)</span>
+        </a>
+      </div>
+
+      <div class="text-xs text-center md:text-right">
+        <p>© 2026 Todos os direitos reservados.</p>
+        <p class="mt-0.5">Desenvolvido por <strong class="text-patisserie-cocoa">Toque de Sucesso</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante WhatsApp -->
+  <a href="https://wa.me/5551995188229?text=Ol%C3%A1%2C%20equipe%20da%20Pacotinho%20dos%20Sonhos!%20Vim%20pelo%20site%20e%20gostaria%20de%20atendimento."
+     target="_blank" rel="noopener noreferrer"
+     aria-label="WhatsApp Pacotinho dos Sonhos"
+     class="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold text-xs uppercase tracking-wider px-5 py-4 rounded-full shadow-2xl transition-transform hover:scale-105">
+    <i data-lucide="message-circle" class="w-5 h-5"></i>
+    <span class="hidden sm:inline">Atendimento WhatsApp</span>
+  </a>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amostra Exclusiva — [NOME_DA_EMPRESA] | Toque de Sucesso</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="h-screen w-screen overflow-hidden flex flex-col bg-slate-950 font-sans antialiased select-none">
+
+  <!-- BARRA SUPERIOR FIXA DA TOQUE DE SUCESSO (LINK 1 - VITRINE LIMPA) -->
+  <header class="bg-slate-900 border-b border-white/10 px-3 sm:px-6 py-2.5 shrink-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 sm:gap-4">
+
+      <!-- Identificação da Amostra -->
+      <div class="flex items-center gap-2.5 min-w-0">
+        <div class="w-8 h-8 rounded-lg bg-amber-500 text-slate-950 font-display font-extrabold text-xs flex items-center justify-center shrink-0 shadow">
+          TS
+        </div>
+        <div class="truncate">
+          <span class="text-[10px] uppercase tracking-widest text-amber-400 font-bold block leading-none">Toque de Sucesso</span>
+          <p class="text-xs sm:text-sm font-bold text-white truncate">
+            Amostra exclusiva para <span class="text-amber-300">[NOME_DA_EMPRESA]</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Botões de Alternância Instantânea dos 3 Modelos -->
+      <div class="flex items-center bg-slate-950/90 p-1 rounded-xl border border-white/10 order-3 sm:order-2 w-full sm:w-auto justify-center">
+        <button type="button" data-model="Modelo 1" data-src="./modelo1.html"
+                class="model-btn flex-1 sm:flex-initial px-3 sm:px-4 py-1.5 rounded-lg text-xs font-bold transition-all bg-amber-500 text-slate-950 shadow">
+          Modelo 1
+        </button>
+        <button type="button" data-model="Modelo 2" data-src="./modelo2.html"
+                class="model-btn flex-1 sm:flex-initial px-3 sm:px-4 py-1.5 rounded-lg text-xs font-bold transition-all text-slate-300 hover:text-white">
+          Modelo 2
+        </button>
+        <button type="button" data-model="Modelo 3" data-src="./modelo3.html"
+                class="model-btn flex-1 sm:flex-initial px-3 sm:px-4 py-1.5 rounded-lg text-xs font-bold transition-all text-slate-300 hover:text-white">
+          Modelo 3
+        </button>
+      </div>
+
+      <!-- Botão Verde "Quero este modelo" -->
+      <div class="order-2 sm:order-3">
+        <a id="cta-quero-modelo"
+           href="https://wa.me/?text=Ol%C3%A1%2C%20equipe%20da%20Toque%20de%20Sucesso!%20Vi%20as%20amostras%20da%20%5BNOME_DA_EMPRESA%5D%20e%20quero%20este%20modelo%3A%20Modelo%201!"
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-1.5 sm:gap-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-xs sm:text-sm px-3.5 sm:px-5 py-2 rounded-xl shadow-lg shadow-emerald-500/20 transition-all active:scale-95">
+          <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+          <span id="cta-label">Quero este modelo</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ÁREA DE VISUALIZAÇÃO DO MODELO ATIVO (100% DA TELA RESTANTE) -->
+  <main class="flex-1 w-full relative bg-white overflow-hidden">
+    <iframe id="preview-frame"
+            src="./modelo1.html"
+            title="Amostra de Site One Page"
+            class="w-full h-full border-0"></iframe>
+  </main>
+
+  <script>
+    lucide.createIcons();
+
+    const CLIENT_NAME = "[NOME_DA_EMPRESA]";
+    // Caso queira fixar um número de WhatsApp comercial da agência Toque de Sucesso, preencha abaixo (ex: "5551999999999"):
+    const AGENCY_WHATSAPP = "";
+
+    const buttons = document.querySelectorAll('.model-btn');
+    const iframe = document.getElementById('preview-frame');
+    const ctaLink = document.getElementById('cta-quero-modelo');
+
+    function updateCtaHref(modelName) {
+      const msg = `Olá, equipe da Toque de Sucesso! Vi as amostras da ${CLIENT_NAME} e quero fechar o ${modelName}!`;
+      const base = AGENCY_WHATSAPP ? `https://wa.me/${AGENCY_WHATSAPP}` : `https://wa.me/`;
+      ctaLink.href = `${base}?text=${encodeURIComponent(msg)}`;
+    }
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetSrc = btn.getAttribute('data-src');
+        const modelName = btn.getAttribute('data-model');
+
+        iframe.src = targetSrc;
+
+        buttons.forEach(b => {
+          b.className = "model-btn flex-1 sm:flex-initial px-3 sm:px-4 py-1.5 rounded-lg text-xs font-bold transition-all text-slate-300 hover:text-white";
+        });
+        btn.className = "model-btn flex-1 sm:flex-initial px-3 sm:px-4 py-1.5 rounded-lg text-xs font-bold transition-all bg-amber-500 text-slate-950 shadow";
+
+        updateCtaHref(modelName);
+      });
+    });
+
+    updateCtaHref("Modelo 1");
+  </script>
+</body>
+</html>
