@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow">
   <title>Amostra Exclusiva — Pacotinho dos Sonhos | Toque de Sucesso</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,49 +22,68 @@
       }
     }
   </script>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "zhsps3tuio");
+  </script>
 </head>
 <body class="h-screen w-screen overflow-hidden flex flex-col bg-slate-950 font-sans antialiased select-none">
 
   <!-- BARRA SUPERIOR FIXA DA TOQUE DE SUCESSO (LINK 1 — VITRINE DOS 3 MODELOS) -->
-  <header class="bg-slate-900 border-b border-white/10 px-3 sm:px-6 py-2.5 shrink-0 z-50 shadow-lg">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 sm:gap-4">
+  <header class="bg-slate-900 border-b border-white/10 px-2.5 sm:px-6 py-2 shrink-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-1.5 sm:gap-4">
 
       <!-- Identificação da Amostra -->
-      <div class="flex items-center gap-2.5 min-w-0">
-        <div class="w-8 h-8 rounded-lg bg-amber-500 text-slate-950 font-display font-extrabold text-xs flex items-center justify-center shrink-0 shadow">
+      <div class="flex items-center gap-2 min-w-0">
+        <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-amber-500 text-slate-950 font-display font-extrabold text-xs flex items-center justify-center shrink-0 shadow">
           TS
         </div>
         <div class="truncate">
-          <span class="text-[10px] uppercase tracking-widest text-amber-400 font-bold block leading-none">Toque de Sucesso</span>
+          <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-amber-400 font-bold block leading-none">Toque de Sucesso</span>
           <p class="text-xs sm:text-sm font-bold text-white truncate">
             Amostra exclusiva para <span class="text-amber-300">Pacotinho dos Sonhos</span>
           </p>
         </div>
       </div>
 
-      <!-- 3 Botões de Alternância Instantânea -->
-      <div class="flex items-center bg-slate-950/90 p-1 rounded-xl border border-white/10 order-3 sm:order-2 w-full sm:w-auto justify-center">
-        <button type="button" data-model="Modelo 1" data-src="./modelo1.html"
-                class="model-btn flex-1 sm:flex-initial px-3.5 sm:px-4 py-1.5 rounded-lg text-xs font-bold transition-all bg-amber-500 text-slate-950 shadow">
-          Modelo 1
-        </button>
-        <button type="button" data-model="Modelo 2" data-src="./modelo2.html"
-                class="model-btn flex-1 sm:flex-initial px-3.5 sm:px-4 py-1.5 rounded-lg text-xs font-bold transition-all text-slate-300 hover:text-white">
-          Modelo 2
-        </button>
-        <button type="button" data-model="Modelo 3" data-src="./modelo3.html"
-                class="model-btn flex-1 sm:flex-initial px-3.5 sm:px-4 py-1.5 rounded-lg text-xs font-bold transition-all text-slate-300 hover:text-white">
-          Modelo 3
-        </button>
+      <!-- 3 Botões de Alternância Instantânea + Frase Explicativa no Desktop -->
+      <div class="flex flex-col items-center order-3 md:order-2 w-full md:w-auto">
+        <div class="flex items-center bg-slate-950/90 p-1 rounded-xl border border-white/10 w-full sm:w-auto justify-center gap-1">
+          <button type="button" data-index="1" data-model="Modelo 1 (Pedidos Rápidos)" data-src="./modelo1.html"
+                  data-desc="Foco em pedido imediato no celular com cardápio direto no WhatsApp."
+                  class="model-btn relative flex-1 sm:flex-initial px-2 sm:px-3.5 py-1.5 rounded-lg text-[11px] sm:text-xs font-bold transition-all bg-amber-500 text-slate-950 shadow flex items-center justify-center gap-1 whitespace-nowrap">
+            <span>Pedidos Rápidos</span>
+            <span data-badge="1" class="rec-badge hidden text-[9px] sm:text-[10px] font-extrabold px-1.5 py-0.5 rounded-full bg-slate-950/20 text-slate-950 leading-none">★ Recomendado</span>
+          </button>
+          <button type="button" data-index="2" data-model="Modelo 2 (Acolhedor)" data-src="./modelo2.html"
+                  data-desc="Destaca o atendimento próximo, o ambiente local e a confiança."
+                  class="model-btn relative flex-1 sm:flex-initial px-2 sm:px-3.5 py-1.5 rounded-lg text-[11px] sm:text-xs font-bold transition-all text-slate-300 hover:text-white flex items-center justify-center gap-1 whitespace-nowrap">
+            <span>Acolhedor</span>
+            <span data-badge="2" class="rec-badge hidden text-[9px] sm:text-[10px] font-extrabold px-1.5 py-0.5 rounded-full bg-amber-400/20 text-amber-300 leading-none">★ Recomendado</span>
+          </button>
+          <button type="button" data-index="3" data-model="Modelo 3 (Vitrine Visual)" data-src="./modelo3.html"
+                  data-desc="Alto impacto visual das especialidades para despertar desejo."
+                  class="model-btn relative flex-1 sm:flex-initial px-2 sm:px-3.5 py-1.5 rounded-lg text-[11px] sm:text-xs font-bold transition-all text-slate-300 hover:text-white flex items-center justify-center gap-1 whitespace-nowrap">
+            <span>Vitrine Visual</span>
+            <span data-badge="3" class="rec-badge hidden text-[9px] sm:text-[10px] font-extrabold px-1.5 py-0.5 rounded-full bg-amber-400/20 text-amber-300 leading-none">★ Recomendado</span>
+          </button>
+        </div>
+        <!-- Frase explicativa de 1 linha (visível apenas no computador >= 768px) -->
+        <p id="model-desc" class="hidden md:block text-[11px] text-slate-400 mt-1 text-center whitespace-nowrap">
+          Foco em pedido imediato no celular com cardápio direto no WhatsApp.
+        </p>
       </div>
 
       <!-- Botão Verde "Quero este modelo" -->
-      <div class="order-2 sm:order-3">
+      <div class="order-2 md:order-3 shrink-0">
         <a id="cta-quero-modelo"
-           href="https://wa.me/?text=Ol%C3%A1%2C%20equipe%20da%20Toque%20de%20Sucesso!%20Vi%20as%20amostras%20da%20Pacotinho%20dos%20Sonhos%20e%20quero%20este%20modelo%3A%20Modelo%201!"
+           href="https://wa.me/5551992720719?text=Ol%C3%A1%2C%20equipe%20da%20Toque%20de%20Sucesso!%20Vi%20as%20amostras%20exclusivas%20da%20Pacotinho%20dos%20Sonhos%20-%20Confeitaria%20e%20Cafeteria%20e%20quero%20este%20modelo%3A%20Modelo%201%20(Pedidos%20R%C3%A1pidos)!"
            target="_blank" rel="noopener noreferrer"
-           class="inline-flex items-center gap-1.5 sm:gap-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-xs sm:text-sm px-3.5 sm:px-5 py-2 rounded-xl shadow-lg shadow-emerald-500/20 transition-all active:scale-95">
-          <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+           class="inline-flex items-center gap-1.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-xs sm:text-sm px-3 sm:px-5 py-1.5 sm:py-2 rounded-xl shadow-lg shadow-emerald-500/20 transition-all active:scale-95 whitespace-nowrap">
+          <i data-lucide="check-circle-2" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i>
           <span>Quero este modelo</span>
         </a>
       </div>
@@ -83,11 +103,30 @@
     lucide.createIcons();
 
     const CLIENT_NAME = "Pacotinho dos Sonhos - Confeitaria e Cafeteria";
-    const AGENCY_WHATSAPP = "";
+    const AGENCY_WHATSAPP = "5551992720719";
+    const RECOMMENDED_MODEL = 1;
 
     const buttons = document.querySelectorAll('.model-btn');
+    const badges = document.querySelectorAll('.rec-badge');
     const iframe = document.getElementById('preview-frame');
     const ctaLink = document.getElementById('cta-quero-modelo');
+    const modelDesc = document.getElementById('model-desc');
+
+    function renderRecommendedBadge(activeIndex) {
+      badges.forEach(badge => {
+        const badgeIndex = Number(badge.getAttribute('data-badge'));
+        if (badgeIndex === RECOMMENDED_MODEL) {
+          badge.classList.remove('hidden');
+          if (badgeIndex === activeIndex) {
+            badge.className = "rec-badge text-[9px] sm:text-[10px] font-extrabold px-1.5 py-0.5 rounded-full bg-slate-950/15 text-slate-950 leading-none";
+          } else {
+            badge.className = "rec-badge text-[9px] sm:text-[10px] font-extrabold px-1.5 py-0.5 rounded-full bg-amber-400/20 text-amber-300 leading-none";
+          }
+        } else {
+          badge.classList.add('hidden');
+        }
+      });
+    }
 
     function updateCtaHref(modelName) {
       const msg = `Olá, equipe da Toque de Sucesso! Vi as amostras exclusivas da ${CLIENT_NAME} e quero este modelo: ${modelName}!`;
@@ -99,19 +138,26 @@
       btn.addEventListener('click', () => {
         const targetSrc = btn.getAttribute('data-src');
         const modelName = btn.getAttribute('data-model');
+        const descText = btn.getAttribute('data-desc');
+        const activeIndex = Number(btn.getAttribute('data-index'));
 
         iframe.src = targetSrc;
+        if (modelDesc && descText) {
+          modelDesc.textContent = descText;
+        }
 
         buttons.forEach(b => {
-          b.className = "model-btn flex-1 sm:flex-initial px-3.5 sm:px-4 py-1.5 rounded-lg text-xs font-bold transition-all text-slate-300 hover:text-white";
+          b.className = "model-btn relative flex-1 sm:flex-initial px-2 sm:px-3.5 py-1.5 rounded-lg text-[11px] sm:text-xs font-bold transition-all text-slate-300 hover:text-white flex items-center justify-center gap-1 whitespace-nowrap";
         });
-        btn.className = "model-btn flex-1 sm:flex-initial px-3.5 sm:px-4 py-1.5 rounded-lg text-xs font-bold transition-all bg-amber-500 text-slate-950 shadow";
+        btn.className = "model-btn relative flex-1 sm:flex-initial px-2 sm:px-3.5 py-1.5 rounded-lg text-[11px] sm:text-xs font-bold transition-all bg-amber-500 text-slate-950 shadow flex items-center justify-center gap-1 whitespace-nowrap";
 
+        renderRecommendedBadge(activeIndex);
         updateCtaHref(modelName);
       });
     });
 
-    updateCtaHref("Modelo 1");
+    renderRecommendedBadge(1);
+    updateCtaHref("Modelo 1 (Pedidos Rápidos)");
   </script>
 </body>
 </html>

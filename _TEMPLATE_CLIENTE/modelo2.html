@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Bloqueio de indexação ativo por padrão na fase de prospecção (remover na entrega final no domínio oficial) -->
   <meta name="robots" content="noindex, nofollow" />
-  <title>[NOME_DA_EMPRESA] | [ESPECIALIDADE] em [CIDADE - UF]</title>
-  <meta name="description" content="Conheça a [NOME_DA_EMPRESA], referência em [ESPECIALIDADE] em [BAIRRO], [CIDADE - UF]. Tradição, confiança e atendimento imediato via WhatsApp!" />
+  <title>[NOME_DA_EMPRESA] — [ESPECIALIDADE] | [BAIRRO], [CIDADE - UF]</title>
+  <meta name="description" content="Conheça a [NOME_DA_EMPRESA], [ESPECIALIDADE] em [BAIRRO], [CIDADE - UF]. Atendimento próximo e contato direto pelo WhatsApp!" />
 
   <!-- Dados Estruturados SEO Local (Schema.org JSON-LD) integrado ao Google Meu Negócio e Redes Sociais -->
   <script type="application/ld+json">
@@ -36,24 +36,46 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "zhsps3tuio");
+  </script>
 </head>
-<body class="bg-stone-50 text-stone-900 font-sans antialiased">
-  <!-- MODELO 2 (TEMPLATE BASE): EDITORIAL, AUTORIDADE & CONFIANÇA (100% WHATSAPP - ZERO FORMULÁRIOS) -->
-  <!-- REGRA DE SEO: Exatamente UM único <h1> por página (no topo/Hero) contendo Nome da Empresa + Serviço Principal + Cidade -->
-  <!-- REGRA DE PROVA SOCIAL PERENE: PROIBIDO exibir números estáticos de nota ou quantidade de avaliações do Google (ex: "4.9 estrelas" ou "142 avaliações"). Use frase institucional de credibilidade + botão "Ver avaliações reais no Google" apontando para a ficha oficial no Google Maps. -->
-  <main class="min-h-screen flex items-center justify-center p-6 text-center">
+<body class="bg-stone-50 text-stone-900 font-sans antialiased flex flex-col min-h-screen">
+  <!-- MODELO 2 (TEMPLATE BASE - ACOLHEDOR): FOCO EM ATENDIMENTO PRÓXIMO, LOCALIZAÇÃO/BAIRRO E CONFIANÇA (SEM INVENTAR HISTÓRIA) -->
+  <!-- REGRA DE ÂNGULO E TÍTULOS: H1 e H2 exclusivos do Modelo 2 (nunca repetir nos Modelos 1 e 3). Zero fatos inventados fora do briefing.md. -->
+  <!-- REGRA DE PROVA SOCIAL BLINDADA: PROIBIDO exibir estrelas fixas, notas numéricas ou afirmações de "excelência reconhecida". Use chamada neutra convidando a ver as avaliações reais no link oficial do Google Meu Negócio. -->
+  <!-- REGRA DE IMAGENS: Priorizar ./fotos/; não repetir fotos na mesma página; em fotos de banco, incluir legenda discreta "Imagem ilustrativa" no canto inferior e zoom suave (transition-transform duration-500 ease-out hover:scale-105) dentro de container overflow-hidden. -->
+  <main class="flex-1 flex items-center justify-center p-6 text-center">
     <section id="hero" class="max-w-lg space-y-4">
-      <span class="text-xs font-bold uppercase tracking-widest text-amber-700">Toque de Sucesso • Modelo 2 (Editorial & Autoridade)</span>
-      <h1 class="text-2xl sm:text-3xl font-bold">[NOME_DA_EMPRESA] — [ESPECIALIDADE] em [CIDADE - UF]</h1>
-      <p class="text-sm text-stone-600">Este arquivo será preenchido automaticamente pelo Antigravity com os 7 blocos obrigatórios de conversão, H1 único, prova social perene (sem notas congeladas) e SEO Local integrado ao Google Meu Negócio.</p>
+      <span class="text-xs font-bold uppercase tracking-widest text-amber-700">Toque de Sucesso • Modelo 2 (Acolhedor)</span>
+      <h1 class="text-2xl sm:text-3xl font-bold">Atendimento próximo em [ESPECIALIDADE] no bairro [BAIRRO] — [NOME_DA_EMPRESA]</h1>
+      <p class="text-sm text-stone-600">Template base com foco em acolhimento local, blindagem de veracidade, zoom suave em imagens (<code>hover:scale-105</code> com <code>overflow-hidden</code>) e SEO Local integrado.</p>
+      <div class="relative rounded-2xl overflow-hidden border border-stone-200 shadow-sm aspect-video max-w-sm mx-auto">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80"
+             alt="[NOME_DA_EMPRESA]"
+             class="w-full h-full object-cover transition-transform duration-500 ease-out hover:scale-105" />
+        <span class="absolute bottom-2 right-2 z-10 pointer-events-none bg-black/55 backdrop-blur-sm text-white/90 text-[10px] font-medium px-2 py-0.5 rounded">Imagem ilustrativa</span>
+      </div>
       <div class="pt-2">
         <a href="[LINK_GOOGLE_MEU_NEGOCIO]" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-stone-800 bg-stone-100 border border-stone-300 px-4 py-2 rounded-full hover:bg-stone-200 transition-colors">
-          <span>Excelência reconhecida pelos nossos clientes no Google • Ver avaliações reais no Google</span>
+          <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+          <span>Perfil Oficial no Google • Ver avaliações reais no Google</span>
           <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
         </a>
       </div>
     </section>
   </main>
+
+  <footer class="border-t border-stone-200 bg-white py-6 px-4 text-center text-xs text-stone-500 space-y-2">
+    <p>© 2026 [NOME_DA_EMPRESA]. Desenvolvido por <strong>Toque de Sucesso</strong></p>
+    <p class="text-[11px] text-stone-400">
+      Amostra demonstrativa exclusiva criada pela Agência Toque de Sucesso. Imagens do perfil público da empresa ou meramente ilustrativas. Remoção imediata mediante solicitação.
+    </p>
+  </footer>
   <script>lucide.createIcons();</script>
 </body>
 </html>
